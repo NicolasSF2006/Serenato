@@ -20,6 +20,16 @@ input[type="checkbox"]:focus {
   outline: none;
 }
 
+.logo-principal {
+  display: block;
+  position:static;
+}
+
+.logo-principal__mobile {
+display: none;
+position: absolute;
+}
+
 .banner-1 {
   background-image: url(./assets/banner-1.png);
 }
@@ -84,5 +94,21 @@ input[type="checkbox"]:focus {
     --bs-offcanvas-color: white;
     --bs-body-color: white;
     color: white;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .logo-principal {
+    display: none;
+    position: absolute;
+  }
+
+  .logo-principal__mobile {
+    display: block;
+    position: static;
+  }
+
+  .banner {
+    margin-top: 5rem;
   }
 }
